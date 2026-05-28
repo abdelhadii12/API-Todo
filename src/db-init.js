@@ -2,7 +2,7 @@ const Database = require('better-sqlite3');
 const fs = require('fs');
 const path = require('path');
 
-const DATABASE_PATH = process.env.DATABASE_PATH || './todos.db';
+const DATABASE_PATH = process.env.DB_PATH || './todos.db';
 const dir = path.dirname(DATABASE_PATH);
 
 if (dir !== '.' && !fs.existsSync(dir)) {

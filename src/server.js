@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 3000;
-const DATABASE_PATH = process.env.DATABASE_PATH || './todos.db';
+const DATABASE_PATH = process.env.DB_PATH || './todos.db';
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-only-change-me';
 
 const dbDir = path.dirname(DATABASE_PATH);
